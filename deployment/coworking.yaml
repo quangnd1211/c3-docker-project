@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: <DOCKER_IMAGE_URI_FROM_ECR>
+        image: 622515209126.dkr.ecr.us-east-1.amazonaws.com/coworking-repository:latest
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -52,5 +52,5 @@ spec:
           valueFrom:
             secretKeyRef:
               name: my-postgres-db-password
-              key: <THE KEY FROM Secret WHICH has THE ENCODED PASSWORD>
+              key: m7jbEBFBss
       restartPolicy: Always
