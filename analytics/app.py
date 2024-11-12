@@ -4,8 +4,8 @@ import os
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime, timedelta
 from flask import jsonify
-from sqlalchemy import and_, text
-from random import randint
+from sqlalchemy import text
+from model import Token
 
 from config import app, db
 
@@ -21,7 +21,7 @@ def health_check():
 @app.route("/readiness_check")
 def readiness_check():
     try:
-        count = db.session.execute(text("SELECT COUNT(*) FROM tokens")).scalar()
+        count = db.session.query(Token).count()
     except Exception as e:
         app.logger.error(e)
         return "failed", 500
