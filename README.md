@@ -153,3 +153,12 @@ View metrics and logs in CloudWatch:
 ![CloudWatch](./Project_Screenshots/logging_cloudwatch_02.png)
 ![CloudWatch](./Project_Screenshots/logging_cloudwatch_03.png)
 ![CloudWatch](./Project_Screenshots/logging_cloudwatch_04.png)
+
+### Build and Deploy Containers to ECR
+
+View code build and deploy Containers to ECR:
+![Codebuild](./Project_Screenshots/codebuild_01.png)
+![Codebuild](./Project_Screenshots/codebuild_02.png)
+![Codebuild](./Project_Screenshots/codebuild_03.png)
+
+![ECR](./Project_Screenshots/ecr.png)
